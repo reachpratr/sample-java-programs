@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
     stage ('TEST') {
-        agent {label 'testagent'}
+        agent {label 'customimage'}
         steps {
             sh 'hostname'
         }
