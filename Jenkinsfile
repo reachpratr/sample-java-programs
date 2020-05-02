@@ -4,7 +4,7 @@ pipeline {
     stage ('TEST') {
         agent {label 'customimage'}
         steps {
-            sh 'echo  "$MAVEN_HOME" >/var/lib/jenkins/asdf'
+            sh 'echo  "$MAVEN_HOME" >/home/jenkins/we'
         }
     }
         
