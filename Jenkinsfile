@@ -5,7 +5,7 @@ pipeline {
         agent {label 'testagent'}
         steps {
             //sh 'echo  "MVN HOME : $MAVEN_HOME" >/SECONDVOLUMEX/asdfguyt'
-            sh '(pwd ; ls >/tmp/asdfg)'
+            sh '(pwd ; ls >/tmp/asdfg;cat /tmp/asdfg)'
         }
     }
         
