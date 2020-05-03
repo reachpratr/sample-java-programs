@@ -4,7 +4,7 @@ pipeline {
     stage ('TEST') {
         agent {label 'testagent'}
         steps {
-            sh 'echo  "$MAVEN_HOME" >/home/jenkins/we'
+            sh 'echo  "MVN HOME : $MAVEN_HOME" >/SECONDVOLUMEX/asdfguyt'
         }
     }
         
